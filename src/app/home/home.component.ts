@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
             {
                 "name": "priority",
                 "displayName": "Topic Priority",
-                "editor":"Number",
+                "editor":"MultilineText",
                 "index": 2
              },
         ]
@@ -42,6 +42,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
         console.log("init");
+        console.log (JSON.stringify(this.topicMetaData));
     }
 
     addDone() : void {

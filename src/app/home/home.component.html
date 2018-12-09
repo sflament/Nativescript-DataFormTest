@@ -10,16 +10,14 @@
     </StackLayout>
 </GridLayout>
 
-<!-- WITH THIS CODE IT'S OK
+<!-- WITH THIS CODE IT'S OK 
 <GridLayout class="page page-content">
         <StackLayout height="100%">
             <RadDataForm [source]="topic" >
                 <TKEntityProperty tkDataFormProperty name="title" displayName="Topic Title" index="0"></TKEntityProperty>
                 <TKEntityProperty tkDataFormProperty name="description" displayName="Topic Description" index="1"></TKEntityProperty>
                 <TKEntityProperty tkDataFormProperty name="priority" displayName="Topic Priority" index="2">
-                        <TKPropertyEditor tkEntityPropertyEditor type="Stepper">
-                                <TKPropertyEditorParams tKEditorParams minimum="0" maximum="10" step="2"></TKPropertyEditorParams>
-                        </TKPropertyEditor>
+                        <TKPropertyEditor tkEntityPropertyEditor type="Number"></TKPropertyEditor>
                 </TKEntityProperty>
             </RadDataForm>
         </StackLayout>
